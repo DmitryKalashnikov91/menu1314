@@ -1,0 +1,575 @@
+
+    
+     [ 
+        {
+          "id": "Бургеры",
+          "imgCategory": "/img/burger.avif",
+          "altCategory": "burger",
+          "items": [
+              {
+                  "id": "burger_1",
+                  "name": "Бургер с говядиной \"Я легенда\"",
+                  "volume": "250",
+                  "price": 450,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "burger_2",
+                  "name": "Чизбургер МАК (мини/большой)",
+                  "volume": "180/220",
+                  "price":450,
+                  "isNew": true,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "burger_3",
+                  "name": "Бургер с говядиной ХАЛЯЛЬ",
+                  "volume": "250",
+                  "price": 480,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "burger_4",
+                  "name": "Бургер с говядиной \"ЗВЕРЬ\"",
+                  "volume": "250",
+                  "price": 530,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "burger_5",
+                  "name": "Бургер с говядиной \"Гавайский\"",
+                  "volume": "250",
+                  "price": 490,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "burger_6",
+                  "name": "Бургер с говядиной \"Пабло\" (ОСТРЫЙ)",
+                  "volume": "250",
+                  "price": 460,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "burger_7",
+                  "name": "Бургер с курицей \"Сиеста\"",
+                  "volume": "250",
+                  "price": 420,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "burger_8",
+                  "name": "Бургер в листьях салата \"Кутуза\" (без булки)",
+                  "volume": "250",
+                  "price": 420,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "burger_9",
+                  "name": "Бургер с витаминной котлетой",
+                  "volume": "250",
+                  "price": 420,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "burger_10",
+                  "name": "Бургер с говядиной \"Мистер Малой\"",
+                  "volume": "200",
+                  "price": 330,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              }
+          ]
+      },
+      {
+          "id": "Горячие блюда",
+          "imgCategory": "/img/noodles.avif",
+          "altCategory": "noodles",
+          "items": [
+              {
+                  "id": "hot_1",
+                  "name": "Лапша \"Хон Гиль Дон\" (острая)",
+                  "volume": "340",
+                  "price": 400,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "hot_2",
+                  "name": "Лапша \"Хон Гиль Дон\" (терияки)",
+                  "volume": "345",
+                  "price": 380,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "hot_3",
+                  "name": "Паста Карбонара",
+                  "volume": "250",
+                  "price": 400,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "hot_4",
+                  "name": "Паста с креветками",
+                  "volume": "280",
+                  "price": 450,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "hot_5",
+                  "name": "Шаурма куриная в пите",
+                  "volume": "280",
+                  "price": 350,
+                  "isNew": true,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "hot_6",
+                  "name": "Шаурма куриная в пите с яйцом",
+                  "volume": "300",
+                  "price": 400,
+                  "isNew": true,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "hot_7",
+                  "name": "Турецкая шаурма с курицей на тарелке",
+                  "volume": "370",
+                  "price": 420,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "hot_8",
+                  "name": "Турецкая шаурма по домашнему на тарелке (ХАЛЯЛЬ)",
+                  "volume": "370",
+                  "price": 490,
+                  "isNew": true,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "hot_9",
+                  "name": "Стейк из куриной грудки с овощами гриль",
+                  "volume": "220",
+                  "price": 450,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              }
+          ]
+      },
+      {
+          "id": "Супы",
+          "imgCategory": "/img/soup.avif",
+          "altCategory": "soup",
+          "items": [
+              {
+                  "id": "soup_1",
+                  "name": "Том ям",
+                  "volume": "200",
+                  "price": 500,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "soup_2",
+                  "name": "Куриный суп",
+                  "volume": "200",
+                  "price": 370,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              }
+          ]
+      },
+      {
+          "id": "Салаты",
+          "imgCategory": "/img/salad.avif",
+          "altCategory": "salad",
+          "items": [
+              { 
+                  "id": "salad_1",
+                  "name": "Салат греческий",
+                  "volume": "200",
+                  "price": 350,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "salad_2",
+                  "name": "Баклажаны с помидорами",
+                  "volume": "200",
+                  "price": 380,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "salad_3",
+                  "name": "Цезарь с курицей",
+                  "volume": "200",
+                  "price": 380,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "salad_3",
+                  "name": "Руккола с креветками",
+                  "volume": "200",
+                  "price": 490,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              }
+          ]
+      },
+      {
+          "id": "Рыба",
+          "imgCategory": "/img/toping.avif",
+          "altCategory": "fish",
+          "items": [
+              {
+                  "id": "toping_1",
+                  "name": "Морской окунь (жареный)",
+                  "volume": "330",
+                  "price": 490,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              }
+          ]
+      },
+      {
+          "id": "Топинги",
+          "imgCategory": "/img/toping.avif",
+          "altCategory": "toping",
+          "items": [
+              { 
+                  "id": "toping_1",
+                  "name": "Бекон",
+                  "volume": "20",
+                  "price": 120,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "toping_2",
+                  "name": "Стейк из куриной грудки",
+                  "volume": "100",
+                  "price": 170,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "toping_3",
+                  "name": "Бифштекс говяжий",
+                  "volume": "100",
+                  "price": 220,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""
+              },
+              {
+                  "id": "toping_3",
+                  "name": "Бифштекс говяжий ХАЛЯЛЬ",
+                  "volume": "100",
+                  "price": 230,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              }
+          ]
+      },
+      {
+          "id": "Закуски",
+          "imgCategory": "img/snacks.avif",
+          "altCategory": "snack",
+          "items": [
+              {
+                  "id": "snack_1",
+                  "name": "Фри",
+                  "volume": "100",
+                  "price": 150,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "snack_2",
+                  "name": "Картофель по-деревенски",
+                  "volume": "100",
+                  "price": 150,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "souse_2",
+                  "name": "Соусы: фирменный, кетчуп, горчичный, барбекю, сырный, сладкий чили, чесночный фирменный",
+                  "volume": "30",
+                  "price": 40,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              }
+          ]
+          
+      },
+      {
+          "id": "Сырники",
+          "imgCategory": "/img/syrniki.avif",
+          "altCategory": "syrniki",
+          "items":[
+              {
+                  "id": "syrnik_1",
+                  "name": "Сырники со сгущенкой/сметаной",
+                  "volume": "240",
+                  "price": 350,
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""  
+              }
+          ]
+      },
+      {
+          "id": "Кофе",
+          "imgCategory": "/img/coffee.avif",
+          "altCategory": "coffe",
+          "items": [
+              {
+                  "id": "coffe_1",
+                  "name": "Американо",
+                  "volume": "0.2/0.3",
+                  "price": "150/180",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""  
+              },
+              {
+                  "id": "coffe_2",
+                  "name": "Эспрессо",
+                  "volume": "0.05/0.1",
+                  "price": "150/200",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""  
+              },
+              {
+                  "id": "coffe_1",
+                  "name": "Капучино",
+                  "volume": "0.2/0.3",
+                  "price": "200/230",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": ""  
+              }
+          ]
+      },
+      {
+          "id": "Вода/Лимонады/шоколад/снэки",
+          "imgCategory": "/img/water4.avif",
+          "altCategory": "water",
+          "items":[
+              {
+                  "id": "item_1",
+                  "name": "Добрый cola, апельсин",
+                  "volume": "0.33",
+                  "price": "100",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_2",
+                  "name": "Газированные напитки в ассортименте",
+                  "volume": "0.33/0.5",
+                  "price": "150",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_3",
+                  "name": "Напитки Черноголовка газированные в ассортименте",
+                  "volume": "0.43",
+                  "price": "150",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_4",
+                  "name": "Напитки Натахтари газированные в ассортименте",
+                  "volume": "0.5",
+                  "price": "200",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_5",
+                  "name": "Липтон чай в ассортименте",
+                  "volume": "0.5",
+                  "price": "160",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_6",
+                  "name": "Вода б/газа, газ. в ассортименте",
+                  "volume": "0.5",
+                  "price": "60",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_7",
+                  "name": "Боржоми",
+                  "volume": "0.3/0.5",
+                  "price": "200/250",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_8",
+                  "name": "Adrenaline",
+                  "volume": "0.25/0.355",
+                  "price": "150/200",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_9",
+                  "name": "Red Bull",
+                  "volume": "0.25/0.355",
+                  "price": "200/300",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_10",
+                  "name": "Red Bull без сахара",
+                  "volume": "0.25",
+                  "price": "200",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_11",
+                  "name": "Пиво безалкогольное в ассортименте",
+                  "volume": "0.5",
+                  "price": "200",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_12",
+                  "name": "Шоколад в ассортименте (shickers, mars и т.д.)",
+                  "volume": "",
+                  "price": "120",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              },
+              {
+                  "id": "item_12",
+                  "name": "Шоколад Ritter sport в ассортименте",
+                  "volume": "100",
+                  "price": "250",
+                  "isNew": false,
+                  "callories": null,
+                  "imgSrc": "",
+                  "alt": "" 
+              }
+          ]
+      }
+  ]

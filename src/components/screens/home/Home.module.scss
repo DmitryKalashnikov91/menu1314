@@ -1,0 +1,30 @@
+.Home {
+  background: #000 ;
+
+  &_categories {
+   ul{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      color: antiquewhite;
+      img {
+        width: 300px;
+        height: 200px;
+
+      }
+
+      
+    }
+    &__links {
+      border: #fff solid 2px;
+      margin: 20px;
+      text-align: center;
+      font-size: xx-large;
+      &:hover {
+        border: #9b266e solid 2px;
+        color: #9b266e;
+      }
+    }
+  }
+}
