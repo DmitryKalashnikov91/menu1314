@@ -68,7 +68,12 @@ const Home = () => {
                             </h1>
                             <div className='flex flex-col i text-white text-center'>
                                 {item.items.map((p) => (
-                                    <p key={p.id}>{p.name}</p>
+                                    <div className='mb-20' key={p.id}>
+                                        <p className='text-2xl text-fuchsia-700 mb-5'>{p.name}</p>
+                                        <span>Вес/объём, г/л: __________________{p.volume} </span>
+                                        <br />
+                                        <span>Стоимость ______________{p.price} рублей</span>
+                                    </div>
                                 ))}
                             </div>
                         </section>
