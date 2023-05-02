@@ -4,13 +4,13 @@ import styles from './Home.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const BASE_URL = 'https://burger1314-34841-default-rtdb.asia-southeast1.firebasedatabase.app/.json';
+const url = process.env.NEXT_PUBLIC_BASE_URL;
 
 const Home = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch(BASE_URL)
+        fetch(url)
             .then((res) => res.json())
             .then((data) => setItems(data))
             .catch((err) => console.error(err))
