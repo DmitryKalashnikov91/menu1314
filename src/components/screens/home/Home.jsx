@@ -84,7 +84,9 @@ const Home = () => {
                                         )}
                                         <span className='underline'>{p.volume}</span>
                                         <br />
-                                        <span className='underline'>{p.price} рублей</span>
+                                        <span className='underline text-purple-500'>
+                                            {p.price} Рублей
+                                        </span>
                                     </div>
                                 ))}
                             </div>
