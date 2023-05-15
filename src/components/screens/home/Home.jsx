@@ -3,6 +3,7 @@ import { FC, useEffect, useState } from 'react';
 import styles from './Home.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
+import ArrowUp from '../../../ui/arrowUp/ArrowUp';
 
 const url = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -68,11 +69,22 @@ const Home = () => {
                             </h1>
                             <div className='flex flex-col i text-white text-center'>
                                 {item.items.map((p) => (
-                                    <div className='mb-20' key={p.id}>
+                                    <div
+                                        className='mb-20 flex flex-col items-center justify-center content-center'
+                                        key={p.id}>
                                         <p className='text-2xl text-fuchsia-700 mb-5'>{p.name}</p>
-                                        <span>Вес/объём, г/л: __________________{p.volume} </span>
+                                        {p.imgSrc && (
+                                            <Image
+                                                className='rounded-lg'
+                                                src={p.imgSrc}
+                                                width={200}
+                                                height={150}
+                                                alt={p.alt}
+                                            />
+                                        )}
+                                        <span className='underline'>{p.volume}</span>
                                         <br />
-                                        <span>Стоимость ______________{p.price} рублей</span>
+                                        <span className='underline'>{p.price} рублей</span>
                                     </div>
                                 ))}
                             </div>
@@ -80,6 +92,7 @@ const Home = () => {
                     ))}
                 </>
             )}
+            <ArrowUp />
         </div>
     );
 };
