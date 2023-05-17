@@ -11,12 +11,14 @@
       img {
         width: auto;
         height: 200px;
+        border-radius: 5px;
       }
 
       
     }
     &__links {
       border: #fff solid 2px;
+      border-radius: 5px;
       margin: 20px;
       text-align: center;
       font-size: xx-large;

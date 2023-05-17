@@ -22,10 +22,10 @@ const Home = () => {
             <h1 className='text-xl text-fuchsia-600 text-center'>Чайная 13/14</h1>
             <h2 className='text-white align-middle text-center text-2xl font-bold mt-10'>Меню</h2>
             {loading ? (
-                <div role='status'>
+                <div role='status' className='w-100 flex justify-center mt-16'>
                     <svg
                         aria-hidden='true'
-                        className='w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600'
+                        className='w-16 h-8  text-gray-200 animate-spin dark:text-gray-600 fill-fuchsia-600'
                         viewBox='0 0 100 101'
                         fill='none'
                         xmlns='http://www.w3.org/2000/svg'>
