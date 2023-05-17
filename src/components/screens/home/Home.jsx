@@ -49,13 +49,15 @@ const Home = () => {
                                     <div className={styles.Home_categories__links}>
                                         <Link href={`#${item.id}`}>
                                             {' '}
-                                            <Image
-                                                src={item.imgCategory}
-                                                width={200}
-                                                height={200}
-                                                alt={item.altCategory}
-                                            />
-                                            {item.id}
+                                            <div className='flex content-center justify-center'>
+                                                <Image
+                                                    src={item.imgCategory}
+                                                    width={200}
+                                                    height={200}
+                                                    alt={item.altCategory}
+                                                />
+                                            </div>
+                                            <div className='w-80'>{item.id}</div>
                                         </Link>
                                     </div>
                                 </li>
