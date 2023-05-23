@@ -1,15 +1,20 @@
 import axios from 'axios';
+import { Roboto, Pacifico } from 'next/font/google';
 import { FC, useEffect, useState } from 'react';
 import styles from './Home.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
 import ArrowUp from '../../../ui/arrowUp/ArrowUp';
+import Popup from '../../popup/Popup';
+import PopupContent from '../../popup/PopupContent';
 
 const url = process.env.NEXT_PUBLIC_BASE_URL;
-
+const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] });
 const Home = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [popupActive, setPopupActive] = useState(false);
+    const [itemsIndex, setItemsIndex] = useState();
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -17,9 +22,21 @@ const Home = () => {
             .catch((err) => console.error(err))
             .finally(() => setLoading(false));
     }, []);
+    useEffect(() => {
+        let cards = document.querySelectorAll('#cards');
+        console.log(cards);
+        cards.forEach((card, i) => {
+            card.addEventListener('click', () => {
+                setItemsIndex(i);
+                setPopupActive(true);
+            });
+        });
+    }, [items]);
     return (
         <div className={styles.Home}>
-            <h1 className='text-xl text-fuchsia-600 text-center'>Чайная 13/14</h1>
+            <h1 className={'pt-6 text-fuchsia-600 text-center text-2xl' + ' ' + pacifico.className}>
+                Бургерная 13/14
+            </h1>
             <h2 className='text-white align-middle text-center text-2xl font-bold mt-10'>Меню</h2>
             {loading ? (
                 <div role='status' className='w-100 flex justify-center mt-16'>
@@ -69,7 +86,7 @@ const Home = () => {
                             <h1 className='text-2xl font-bold text-red-500' id={item.id}>
                                 {item.id}
                             </h1>
-                            <div className='flex flex-col i text-white'>
+                            <div className='flex flex-col i text-white' id='cards'>
                                 {item.items.map((p) => (
                                     <div className='mb-20 flex flex-col items-center' key={p.id}>
                                         <p className='text-2xl text-fuchsia-700 mb-5'>{p.name}</p>
@@ -92,6 +109,11 @@ const Home = () => {
                             </div>
                         </section>
                     ))}
+                    {/* {popupActive && (
+                        <Popup active={popupActive} setActive={setPopupActive}>
+                            <PopupContent items={items[itemsIndex].items} itemsIndex={itemsIndex} />
+                        </Popup>
+                    )} */}
                 </>
             )}
             <ArrowUp />
