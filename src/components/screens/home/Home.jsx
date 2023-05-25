@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Roboto, Pacifico } from 'next/font/google';
+import { Montserrat_Alternates, Caveat } from 'next/font/google';
 import { FC, useEffect, useState } from 'react';
 import styles from './Home.module.scss';
 import Link from 'next/link';
@@ -9,7 +9,8 @@ import Popup from '../../popup/Popup';
 import PopupContent from '../../popup/PopupContent';
 
 const url = process.env.NEXT_PUBLIC_BASE_URL;
-const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] });
+const caveat = Caveat({ subsets: ['latin'], weight: ['700'] });
+const montserrat = Montserrat_Alternates({ subsets: ['latin'], weight: ['500'] });
 const Home = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -34,10 +35,14 @@ const Home = () => {
     }, [items]);
     return (
         <div className={styles.Home}>
-            <h1 className={'pt-6 text-amber-600 text-center text-3xl' + ' ' + pacifico.className}>
+            <h1 className={'pt-6 text-amber-600 text-center text-3xl' + ' ' + caveat.className}>
                 Бургерная 13/14
             </h1>
-            <h2 className='text-amber-600 align-middle text-center text-2xl font-bold mt-10'>
+            <h2
+                className={
+                    'text-amber-600 align-middle text-center text-2xl font-bold mt-10 ' +
+                    montserrat.className
+                }>
                 Меню
             </h2>
             {loading ? (
@@ -61,7 +66,7 @@ const Home = () => {
                 </div>
             ) : (
                 <>
-                    <nav className={styles.Home_categories}>
+                    <nav className={styles.Home_categories + ' ' + montserrat.className}>
                         <ul>
                             {items.map((item) => (
                                 <li key={item.id}>
@@ -84,7 +89,11 @@ const Home = () => {
                         </ul>
                     </nav>
                     {items.map((item) => (
-                        <section key={item.id} className='flex flex-col gap-5 pt-9 text-center'>
+                        <section
+                            key={item.id}
+                            className={
+                                'flex flex-col gap-5 pt-9 text-center ' + montserrat.className
+                            }>
                             <h1 className='text-4xl font-bold text-amber-700' id={item.id}>
                                 {item.id}
                             </h1>
