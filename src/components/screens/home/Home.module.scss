@@ -1,5 +1,5 @@
 .Home {
-  background: #000 ;
+  background: #E1DEB5 ;
   scroll-behavior: smooth;
   &_categories {
    ul{
@@ -7,7 +7,7 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      color: antiquewhite;
+      color: #BD7E49;
       img {
         width: auto;
         height: 200px;
@@ -23,8 +23,8 @@
       text-align: center;
       font-size: xx-large;
       &:hover {
-        border: #9b266e solid 2px;
-        color: #9b266e;
+        border: #E4C49B solid 2px;
+        color: #E4C49B;
       }
     }
   }

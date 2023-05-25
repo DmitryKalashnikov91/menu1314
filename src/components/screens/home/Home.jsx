@@ -34,10 +34,12 @@ const Home = () => {
     }, [items]);
     return (
         <div className={styles.Home}>
-            <h1 className={'pt-6 text-fuchsia-600 text-center text-2xl' + ' ' + pacifico.className}>
+            <h1 className={'pt-6 text-amber-600 text-center text-3xl' + ' ' + pacifico.className}>
                 Бургерная 13/14
             </h1>
-            <h2 className='text-white align-middle text-center text-2xl font-bold mt-10'>Меню</h2>
+            <h2 className='text-amber-600 align-middle text-center text-2xl font-bold mt-10'>
+                Меню
+            </h2>
             {loading ? (
                 <div role='status' className='w-100 flex justify-center mt-16'>
                     <svg
@@ -83,13 +85,13 @@ const Home = () => {
                     </nav>
                     {items.map((item) => (
                         <section key={item.id} className='flex flex-col gap-5 pt-9 text-center'>
-                            <h1 className='text-2xl font-bold text-red-500' id={item.id}>
+                            <h1 className='text-4xl font-bold text-amber-700' id={item.id}>
                                 {item.id}
                             </h1>
-                            <div className='flex flex-col i text-white' id='cards'>
+                            <div className='flex flex-col i text-amber-600' id='cards'>
                                 {item.items.map((p) => (
                                     <div className='mb-20 flex flex-col items-center' key={p.id}>
-                                        <p className='text-2xl text-fuchsia-700 mb-5'>{p.name}</p>
+                                        <p className='text-3xl text-lime-600 mb-5'>{p.name}</p>
                                         {p.imgSrc && (
                                             <Image
                                                 className='rounded-lg '
@@ -99,9 +101,9 @@ const Home = () => {
                                                 alt={p.alt}
                                             />
                                         )}
-                                        <span className='underline'>{p.volume}</span>
+                                        <span className='text-xl'>{p.volume}</span>
                                         <br />
-                                        <span className='underline text-purple-500'>
+                                        <span className='text-xl text-amber-600'>
                                             {p.price} Рублей
                                         </span>
                                     </div>
@@ -118,7 +120,7 @@ const Home = () => {
             )}
             <ArrowUp />
             <footer className='text-white p-10 w-100 flex align-middle justify-center'>
-                <button className='bg-purple-900 p-3 rounded-xl '>
+                <button className='bg-orange-400 p-3 rounded-xl '>
                     <a className='flex' href='mailto:dmikalash118@gmail.com'>
                         Связь с разработчиком:
                         <svg
