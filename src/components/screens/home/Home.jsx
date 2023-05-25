@@ -44,7 +44,7 @@ const Home = () => {
                 <div role='status' className='w-100 flex justify-center mt-16'>
                     <svg
                         aria-hidden='true'
-                        className='w-16 h-8  text-gray-200 animate-spin dark:text-gray-600 fill-fuchsia-600'
+                        className='w-16 h-8  text-gray-200 animate-spin dark:text-gray-600 fill-amber-600'
                         viewBox='0 0 100 101'
                         fill='none'
                         xmlns='http://www.w3.org/2000/svg'>
